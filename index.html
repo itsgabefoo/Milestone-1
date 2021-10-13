@@ -1,3 +1,6 @@
+<!--The purpose of this file is to be a template for every new page that you make.  This is a blank
+page that contains all the code you need for a new page.-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,24 +8,75 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="capstonePracMaster.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-  <title>OT CS Capstone</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+  <title>Gabe Garza - OT CS Capsto\ne</title>
 </head>
 <body>
+  <!--Navbar-->
   <div data-include="nav"></div>
-  <div class="p-3">
-
-    <div class="jumbotron">
-      <div class="smelly">
-        <h1 class="display-4">Ahaha Yuh it's gave</h1>
-        <p class="lead">Welcome to my crib</p>
+  <!--Whole page container div-->
+<div id="wholePage">
+  <br>
+  <br>
+  <h1 id="gabeTitle">hey, i'm Gabe</h1>
+  <!-- Carousel :D -->
+  <div class="p-5"> 
+    <div id="carouselHero" class="carousel slide" data-bs-ride="carousel" >
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#carouselHero" data-bs-slide-to="3" aria-label="Slide 4"></button>
       </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="Glasses1.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Gabe in Texas</h5>
+            <p>I love to do this cool thing because i'm cool.</p>
+        </div>
+          </div>
+        <div class="carousel-item">
+          <img src="Presidential.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Gabe as child</h5>
+            <p>I love to do this cool thing because i'm cool.</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Werkin.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Gabe at work</h5>
+            <p>I love to do this cool thing because i'm cool.</p>
+        </div>
+        </div>
+        <div class="carousel-item">
+          <img src="Drumming.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h3>Gabe drumming</h5>
+            <p>I love to do this cool thing because i'm cool.</p>
+        </div>
+        </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselHero" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselHero" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
-
+  </div>
+<p id="bottomText">Tell me, what is it you plan to do with your one wild and precious life? - Mary Oliver</p>
+<br>
+<br>
+<br>                                                                                                                           >
+</div>
+</div>
   <!--Bootstrap and other JS scripts-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="scripts/scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="scripts/scripts.js"></script>
 </body>
 </html>

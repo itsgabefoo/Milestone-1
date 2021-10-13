@@ -1,6 +1,25 @@
-.smelly {
-    text-align: center;
+#wholePage {
+    background-color:rgb(5, 5, 51);
 }
-h1{
-    color:navy;
+
+#carouselHero .carousel-item img{
+    object-fit: cover;
+    object-position: center;
+    height: 60vh;
+    width: 60vw;
+    overflow: hidden;
+
+}
+
+#gabeTitle {
+    color:mintcream;
+    text-align: center;
+    font-family:initial;
+}
+
+
+#bottomText {
+    text-align: center;
+    color: mintcream;
+    font-family:inherit;
 }

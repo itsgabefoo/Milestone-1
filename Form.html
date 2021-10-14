@@ -16,8 +16,50 @@ page that contains all the code you need for a new page.-->
   <div data-include="nav"></div>
   <!--Whole page container div-->
   <div class="container">
-Form :D
 
+    <div id="wholePage" class="p-5">
+      <form class="needs-validation" action="forms.html" method="get">
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
+        </div>
+        <div class="form-group">
+          <label for="pickanum">Example select</label>
+          <select class="form-control" id="pickanum" name="pickanum" required>
+            <option selected></option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+          </select>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="Red" id="redcheck" name="colors">
+          <label class="form-check-label" for="red">
+            Red
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="Green" id="greencheck" name="colors">
+          <label class="form-check-label" for="green">
+            Green
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="Purple" id="purplecheck" name="colors">
+          <label class="form-check-label" for="purple">
+            Purple
+          </label>
+        </div>
+    
+        <div class="form-group">
+          <label for="writestuff">Example textarea</label>
+          <textarea class="form-control" id="writestuff" name="writestuff" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Submit</button>
+      </form>
+    </div>
 
   </div>
   <!--Bootstrap and other JS scripts-->

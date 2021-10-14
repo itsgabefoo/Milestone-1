@@ -6,11 +6,12 @@ body {
     background-color:rgb(5, 5, 51);
 }
 
-#carouselHero .carousel-item img{
+
+.col-2 img{
     object-fit: cover;
     object-position: center;
-    height: 60vh;
-    width: 60vw;
+    height: 100%;
+    width: 100%;
     overflow: hidden;
 
 }

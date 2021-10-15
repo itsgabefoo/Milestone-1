@@ -1,6 +1,4 @@
-body {
-    background-color:rgb(5, 5, 51);
-}
+
 
 #wholePage {
     background-color:rgb(5, 5, 51);
@@ -11,7 +9,7 @@ body {
     object-fit: cover;
     object-position: center;
     height: 100%;
-    width: 100%;
+    width: 99%;
     overflow: hidden;
 
 }
@@ -27,4 +25,16 @@ body {
     text-align: center;
     color: mintcream;
     font-family:inherit;
+}
+
+p {
+    color: ivory;
+}
+
+label {
+    color: ivory;
+}
+
+.display-5 {
+    color: ivory;
 }

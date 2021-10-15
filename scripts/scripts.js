@@ -8,5 +8,3 @@ $(function () {
     document.title = "Gabe Garza - OT CS Capstone"
 
   })
-
-  

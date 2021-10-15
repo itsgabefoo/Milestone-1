@@ -7,6 +7,7 @@ page that contains all the code you need for a new page.-->
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="capstonePracMaster.css">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
   <title>Gabe Garza - OT CS Capsto\ne</title>
@@ -15,16 +16,21 @@ page that contains all the code you need for a new page.-->
   <!--Navbar-->
   <div data-include="nav"></div>
   <!--Whole page container div-->
-  <div class="container">
 
-    <div id="wholePage" class="p-5">
+    <div class="p-5" id="wholePage" style="height: 100%;">
+      <br>
+      <br>
+      <h1 class="display-5">Form</h1>
+      <br>
+      <br>
       <form class="needs-validation" action="forms.html" method="get">
         <div class="form-group">
           <label for="email">Email address</label>
           <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com" required>
         </div>
+        <br>
         <div class="form-group">
-          <label for="pickanum">Example select</label>
+          <label for="pickanum">On a scale of 1-5, how comfortable do you feel in your own skin?</label>
           <select class="form-control" id="pickanum" name="pickanum" required>
             <option selected></option>
             <option>1</option>
@@ -34,37 +40,59 @@ page that contains all the code you need for a new page.-->
             <option>5</option>
           </select>
         </div>
+        <br>
+        <p>Do you feel like you know me better after interacting with my site?</p>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="Red" id="redcheck" name="colors">
-          <label class="form-check-label" for="red">
-            Red
+          <input class="form-check-input" type="radio" value="Yes" id="check" name="checkForm">
+          <label class="form-check-label" for="check">
+            Yes, I do
           </label>
         </div>
         <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="Green" id="greencheck" name="colors">
-          <label class="form-check-label" for="green">
-            Green
+          <input class="form-check-input" type="radio" value="No" id="check" name="checkForm">
+          <label class="form-check-label" for="check">
+            No, I don't, you're bad.
           </label>
         </div>
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" value="Purple" id="purplecheck" name="colors">
-          <label class="form-check-label" for="purple">
-            Purple
-          </label>
-        </div>
-    
+    <br>
         <div class="form-group">
-          <label for="writestuff">Example textarea</label>
-          <textarea class="form-control" id="writestuff" name="writestuff" rows="3" required></textarea>
+          <label for="writestuff">Share, if you feel comfortable, what (if anything) you could relate to in my story.</label>
+          <textarea class="form-control" id="writestuff" name="writestuff" rows="3"></textarea>
         </div>
         <button type="submit" class="btn btn-primary mt-3">Submit</button>
       </form>
-    </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p id="bottomText">"Tell me, what is it you plan to do with your one wild and precious life?" - Mary Oliver</p>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
 
-  </div>
+    </div>
+  <br>
+  <br>
   <!--Bootstrap and other JS scripts-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script type="text/javascript" src="scripts/scripts.js"></script>
+    <script type="text/javascript">
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const email = urlParams.get('email');
+    const pickanum = urlParams.get('pickanum');
+    const colors = urlParams.getAll('checkForm')
+    const writestuff = urlParams.get('writestuff');
+    var output = "Your email is: " + email + " <br> The number you picked is: " + pickanum + "<br> the colors you picked were: " + checkForm + "<br> and you wrote the following: <br>" + writestuff;
+
+    jQuery(document).ready(function() {
+      $("#results").html(output); 
+    });
+
+  </script>
+
 </body>
 </html>
